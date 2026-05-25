@@ -16,7 +16,7 @@ export default function ImageUpload({ value, onChange }) {
         setError('')
         setUploading(true)
         uploadFile('/submissions/upload', file)
-            .then(data => onChange(data.url))
+            .then(data => onChange(toAbsolute(data.url)))
             .catch(() => setError('Upload failed — try again.'))
             .finally(() => setUploading(false))
     }
