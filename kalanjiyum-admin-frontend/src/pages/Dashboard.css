@@ -1,0 +1,153 @@
+.dash-page {
+    padding: 2rem;
+}
+
+.dash-section {
+    margin-bottom: 2rem;
+}
+
+.dash-section_title {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: .775rem;
+    font-weight: 600;
+    color: #64748b;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    margin: 0 0 .875rem;
+}
+
+.dash-grid {
+    display: grid;
+    gap: .875rem;
+}
+.dash-grid--3 { grid-template-columns: repeat(3, 1fr); }
+.dash-grid--4 { grid-template-columns: repeat(4, 1fr); }
+
+.dash-card {
+    display: flex;
+    align-items: center;
+    gap: .875rem;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 1rem 1.125rem;
+    text-decoration: none;
+    transition: border-color .15s, box-shadow .15s, transform .15s;
+}
+.dash-card:hover {
+    border-color: #cbd5e1;
+    box-shadow: 0 4px 12px rgba(0,0,0,.06);
+    transform: translateY(-1px);
+}
+
+.dash-card_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.dash-card_label {
+    font-size: .875rem;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.dash-card_count {
+    margin-left: auto;
+    font-size: .75rem;
+    font-weight: 600;
+    color: #64748b;
+    background: #f1f5f9;
+    padding: .15rem .55rem;
+    border-radius: 999px;
+    flex-shrink: 0;
+}
+
+/* Notification badge — shown only when there are unseen submissions */
+.dash-card_notif {
+    margin-left: auto;
+    min-width: 20px;
+    height: 20px;
+    padding: 0 .4rem;
+    border-radius: 999px;
+    background: #ef4444;
+    color: #fff;
+    font-size: .69rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 0 0 2px #fff;
+    animation: notif-pop .2s ease;
+}
+@keyframes notif-pop {
+    from { transform: scale(.6); opacity: 0; }
+    to   { transform: scale(1);  opacity: 1; }
+}
+
+.dash-recent {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.dash-recent_row {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    padding: .625rem 1rem;
+    border-bottom: 1px solid #f1f5f9;
+    text-decoration: none;
+    transition: background .12s;
+}
+.dash-recent_row:last-child { border-bottom: none; }
+.dash-recent_row:hover { background: #f8fafc; }
+
+.dash-recent_type {
+    font-size: .7rem;
+    font-weight: 600;
+    padding: .15rem .5rem;
+    border-radius: 999px;
+    flex-shrink: 0;
+    text-transform: uppercase;
+    letter-spacing: .03em;
+}
+.dash-recent_type--contact    { background: #dbeafe; color: #1d4ed8; }
+.dash-recent_type--job        { background: #ede9fe; color: #6d28d9; }
+.dash-recent_type--internship { background: #d1fae5; color: #065f46; }
+
+.dash-recent_name {
+    flex: 1;
+    font-size: .8125rem;
+    color: #1e293b;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dash-recent_date {
+    font-size: .75rem;
+    color: #94a3b8;
+    flex-shrink: 0;
+}
+
+@media (max-width: 1100px) {
+    .dash-grid--4 { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 800px) {
+    .dash-grid--3, .dash-grid--4 { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+    .dash-page { padding: 1rem; }
+    .dash-grid--3, .dash-grid--4 { grid-template-columns: 1fr; }
+    .dash-recent_date { display: none; }
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "end": 2019,
+    "suffix": "",
+    "label": "YEAR FOUNDED",
+    "static": true
+  },
+  {
+    "id": 2,
+    "end": 50,
+    "suffix": "\u002B",
+    "label": "SOLUTIONS OFFERED",
+    "static": false
+  },
+  {
+    "id": 3,
+    "end": 25,
+    "suffix": "\u002B",
+    "label": "BUSINESS DOMAINS",
+    "static": false
+  },
+  {
+    "id": 4,
+    "end": 20,
+    "suffix": "\u002B",
+    "label": "ASSOCIATED PROFESSIONALS",
+    "static": false
+  }
+]

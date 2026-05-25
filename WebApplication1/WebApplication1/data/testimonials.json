@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Arun Kumar",
+    "role": "Operations Head",
+    "company": "Tex-Mill Solutions",
+    "rating": 5,
+    "quote": "Kalanjiyam Technical Solutions transformed our manufacturing unit with a seamless PLC upgrade. Their team in Madurai is exceptionally knowledgeable and professional."
+  },
+  {
+    "id": 2,
+    "name": "Priya Raghavan",
+    "role": "IT Director",
+    "company": "Southern Logistics",
+    "rating": 5,
+    "quote": "The web portal built by Kalanjiyam Technical Solutions for our B2B operations is robust and fast. It has significantly improved our order processing efficiency."
+  },
+  {
+    "id": 3,
+    "name": "Suresh Raman",
+    "role": "Plant Manager",
+    "company": "Precision Gears Ltd.",
+    "rating": 5,
+    "quote": "Industry 4.0 implementation seemed daunting until we met the Kalanjiyam Technical Solutions team. Their customized approach made the transition smooth."
+  }
+]

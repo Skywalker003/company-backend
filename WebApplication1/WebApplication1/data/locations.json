@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "type": "Registered Office",
+    "name": "Krishnapuram Colony",
+    "address": "12/4, North Cross Street,\nKrishnapuram Colony, Madurai,\nTamil Nadu, India – 625014",
+    "mapUrl": "https://maps.google.com/?q=Krishnapuram+Colony+Madurai"
+  },
+  {
+    "id": 2,
+    "type": "Branch Office",
+    "name": "KK Nagar Hub",
+    "address": "Plot No. 45, 2nd Main Road,\nK.K. Nagar, Madurai,\nTamil Nadu, India – 625020",
+    "mapUrl": "https://maps.google.com/?q=KK+Nagar+Madurai"
+  }
+]

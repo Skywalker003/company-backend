@@ -1,0 +1,6 @@
+[
+  { "id": 1, "icon": "Search",  "step": "01", "title": "Discover",     "desc": "We map your workflows, pain points, and goals before writing a single line of code." },
+  { "id": 2, "icon": "PenTool", "step": "02", "title": "Design",       "desc": "We architect the solution — data model, UX wireframes, and integration points." },
+  { "id": 3, "icon": "Code2",   "step": "03", "title": "Build",        "desc": "Agile sprints with regular demos so you see progress and steer early." },
+  { "id": 4, "icon": "Rocket",  "step": "04", "title": "Deploy & Own", "desc": "We go live with you and provide documentation, training, and ongoing support." }
+]

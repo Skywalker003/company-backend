@@ -1,0 +1,41 @@
+.tageditor {
+    border: 1px solid #e2e8f0;
+    border-radius: 7px;
+    padding: .375rem .5rem;
+    background: #fff;
+    cursor: text;
+    transition: border-color .15s, box-shadow .15s;
+}
+.tageditor:focus-within {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59,130,246,.12);
+}
+.tageditor-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .375rem;
+    align-items: center;
+}
+.tageditor-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: .25rem;
+    background: #eff6ff;
+    color: #1d4ed8;
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-size: .75rem;
+    font-weight: 500;
+}
+.tageditor-tag button {
+    display: flex; align-items: center; justify-content: center;
+    background: none; border: none; cursor: pointer;
+    color: #3b82f6; padding: 0; line-height: 1;
+}
+.tageditor-tag button:hover { color: #1d4ed8; }
+.tageditor-input {
+    border: none; outline: none; background: none;
+    font-size: .8125rem; color: #0f172a; min-width: 80px; flex: 1;
+    padding: 2px 4px;
+}
+.tageditor-input::placeholder { color: #94a3b8; }

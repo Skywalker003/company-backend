@@ -1,0 +1,6 @@
+[
+  { "id": 1, "num": "01", "title": "Choose Your Domain",     "text": "Pick Software Development, Industrial Automation, or Administration" },
+  { "id": 2, "num": "02", "title": "Submit Application",     "text": "Fill out the internship application form with your details and interests" },
+  { "id": 3, "num": "03", "title": "Interview & Onboarding", "text": "Quick intro call with our team to understand your goals" },
+  { "id": 4, "num": "04", "title": "Start Learning",         "text": "Begin working on real projects with guidance from mentors" }
+]

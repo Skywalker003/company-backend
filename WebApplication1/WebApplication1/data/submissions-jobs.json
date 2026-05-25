@@ -1,0 +1,25 @@
+[
+  {
+    "id": 1,
+    "submittedAt": "2026-05-13T08:04:21.3228951Z",
+    "firstName": "sr",
+    "lastName": "srivikas",
+    "email": "srivikasramadas@gmail.com",
+    "phone": "\u002B919597632495",
+    "position": "React Developer",
+    "address": "7, 120ft road survey colony, sambakulam main road, k pudur, madurai",
+    "resumeUrl": "/uploads/404c1613-8e59-44c2-b7ef-ee99f4a6f08e.pdf",
+    "photoUrl": "/uploads/7bfc29bf-8d66-48b7-89d2-6ceb587acf1a.jpg"
+  },
+  {
+    "id": 2,
+    "submittedAt": "2026-05-13T08:05:12.2773691Z",
+    "firstName": "sr",
+    "lastName": "srivikas",
+    "email": "srivikasramadas@gmail.com",
+    "phone": "\u002B919597632495",
+    "position": "React Developer",
+    "address": "7, 120ft road survey colony, sambakulam main road, k pudur, madurai",
+    "resumeUrl": "/uploads/b11cfd0b-4740-4e1a-92c8-d8cb36570597.pdf"
+  }
+]

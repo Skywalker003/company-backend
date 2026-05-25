@@ -1,0 +1,68 @@
+[
+  {
+    "id": "crm",
+    "label": "CRM",
+    "fullLabel": "Customer Relationship Management",
+    "subFilters": [
+      "All",
+      "Lead Generation",
+      "Order Conversion",
+      "Customer Data Analysis"
+    ]
+  },
+  {
+    "id": "scm",
+    "label": "SCM",
+    "fullLabel": "Supply Chain Management",
+    "subFilters": [
+      "All",
+      "Sales \u0026 Distribution",
+      "Procurement"
+    ]
+  },
+  {
+    "id": "mes",
+    "label": "MES",
+    "fullLabel": "Manufacturing Execution System",
+    "subFilters": [
+      "All",
+      "Machine Data Monitoring",
+      "Quality Assurance",
+      "Calibration",
+      "Planning \u0026 Scheduling",
+      "OEE \u0026 PMS",
+      "Maintenance"
+    ]
+  },
+  {
+    "id": "inventory",
+    "label": "Inventory \u0026 Warehouse",
+    "fullLabel": "Inventory \u0026 Warehouse Management",
+    "subFilters": [
+      "All",
+      "Inter Location Transfer",
+      "Intra Location Transfer"
+    ]
+  },
+  {
+    "id": "hrm",
+    "label": "HRM",
+    "fullLabel": "Human Resource Management",
+    "subFilters": [
+      "All",
+      "Payroll",
+      "Employee Details Management",
+      "Attendance Management"
+    ]
+  },
+  {
+    "id": "finance",
+    "label": "Accounting \u0026 Finance",
+    "fullLabel": "Accounting \u0026 Finance",
+    "subFilters": [
+      "All",
+      "General Accounting",
+      "Financial Reporting"
+    ]
+  }
+]

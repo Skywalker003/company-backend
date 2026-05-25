@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "q": "Is the internship paid?",
+    "a": "The internship is currently unpaid. However, interns gain valuable hands-on experience and a verified completion certificate from Kalanjiyam Technical Solutions."
+  },
+  {
+    "id": 2,
+    "q": "How long is the internship?",
+    "a": "The duration is flexible and can be adjusted based on your availability and learning goals. We work around your schedule."
+  },
+  {
+    "id": 3,
+    "q": "Is it online or offline?",
+    "a": "Both options are available. You can work online remotely from anywhere in the world, or visit our Madurai office for an offline internship experience."
+  },
+  {
+    "id": 4,
+    "q": "Will I get a certificate?",
+    "a": "Yes. All interns who successfully complete the program receive a verified completion certificate from Kalanjiyam Technical Solutions."
+  },
+  {
+    "id": 5,
+    "q": "How do I apply?",
+    "a": "Click the Apply Now button, choose your domain of interest, and fill out the internship application form. Our team will contact you within 48 hours."
+  }
+]

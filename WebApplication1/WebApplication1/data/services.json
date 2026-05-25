@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "title": "Industry 4.0",
+    "shortDescription": "Data acquisition, cloud reporting, IIoT, machine vision and industrial automation",
+    "desc": "Connect your machines to the cloud \u2014 capture live data, deploy IIoT sensors, and automate the shopfloor with machine vision.",
+    "color": "#2563EB",
+    "bg": "#EFF6FF",
+    "icon": "Settings",
+    "anchor": "industry4",
+    "image": "/uploads/c6e2dcfa-6311-402c-b270-0f38d1f5f44c.jpg",
+    "items": [
+      "Data acquisition \u0026 cloud reporting",
+      "IIoT \u0026 machine vision",
+      "Industrial automation"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Process Automation",
+    "shortDescription": "Customer management, logistics solutions and process traceability systems",
+    "desc": "Digitise customer management, logistics workflows, and end-to-end process traceability across your operations.",
+    "color": "#EA580C",
+    "bg": "#FFF7ED",
+    "icon": "RefreshCw",
+    "anchor": "automation",
+    "image": "/uploads/9d5dab7e-1f81-4a02-9a8f-aa70dff67234.jpg",
+    "items": [
+      "Customer management systems",
+      "Logistics \u0026 route solutions",
+      "Process traceability"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Web Development",
+    "shortDescription": "eCommerce platforms, business management systems and corporate websites",
+    "desc": "Build eCommerce stores, business management systems, and corporate websites designed to grow with your business.",
+    "color": "#4F46E5",
+    "bg": "#EEF2FF",
+    "icon": "Globe",
+    "anchor": "webdev",
+    "image": "/uploads/6e034390-a179-433c-b3ac-6f063d9b9c48.jpg",
+    "items": [
+      "eCommerce platforms",
+      "Business management systems",
+      "Corporate websites"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Network Solutions",
+    "shortDescription": "Mesh networking, network design, debugging and CCTV network setup",
+    "desc": "Design, deploy, and debug wired and mesh networks \u2014 including full CCTV network infrastructure.",
+    "color": "#0891B2",
+    "bg": "#ECFEFF",
+    "icon": "Network",
+    "anchor": "network",
+    "image": "/uploads/79880163-e4c3-4f78-8fa2-8604d97661bf.jpg",
+    "items": [
+      "Mesh \u0026 enterprise network design",
+      "Network debugging \u0026 monitoring",
+      "CCTV network setup"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "PLCs, Sensors \u0026 Safety",
+    "shortDescription": "Siemens, Omron, Allen Bradley, Mitsubishi, Schneider and more",
+    "desc": "Programme and integrate PLCs from Siemens, Omron, Allen Bradley, Mitsubishi, and Schneider with safety systems.",
+    "color": "#DC2626",
+    "bg": "#FFF1F2",
+    "icon": "Cpu",
+    "anchor": "plc",
+    "image": "/uploads/5b1a45f1-59bb-43ad-8ace-4b8b0483f5c1.png",
+    "items": [
+      "Siemens, Omron \u0026 Allen Bradley",
+      "Mitsubishi \u0026 Schneider PLCs",
+      "Safety systems integration"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Consulting Services",
+    "shortDescription": "SAP solutions, AMC for computers, CCTV installation and technical support",
+    "desc": "SAP solutions, annual maintenance contracts, CCTV installation, and hands-on technical support.",
+    "color": "#16A34A",
+    "bg": "#F0FDF4",
+    "icon": "Wrench",
+    "anchor": "consulting",
+    "image": "/uploads/ca24cf3f-d536-4d67-9643-3e724f5e2da5.jpg",
+    "items": [
+      "SAP solutions \u0026 implementation",
+      "AMC for computers \u0026 CCTV",
+      "Technical support \u0026 training"
+    ]
+  }
+]

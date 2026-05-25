@@ -1,0 +1,6 @@
+[
+  { "id": 1, "icon": "Laptop",   "title": "Online & Offline Mode",   "text": "Join us from anywhere or work on-site — both modes are fully supported." },
+  { "id": 2, "icon": "Users",    "title": "Industry Mentorship",     "text": "Learn directly from certified engineers and experienced developers." },
+  { "id": 3, "icon": "Calendar", "title": "Flexible Duration",       "text": "Intern on your own schedule. Duration is flexible based on your availability." },
+  { "id": 4, "icon": "Award",    "title": "Completion Certificate",  "text": "Earn a verified certificate on successful completion of your internship." }
+]

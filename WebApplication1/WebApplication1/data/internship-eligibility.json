@@ -1,0 +1,5 @@
+[
+  { "id": 1, "icon": "BookOpen",  "title": "Students",         "text": "Currently pursuing any degree in engineering, computer science, business, or related fields" },
+  { "id": 2, "icon": "User",      "title": "Fresh Graduates",  "text": "Recently completed your degree and looking for real-world hands-on experience" },
+  { "id": 3, "icon": "RefreshCw", "title": "Career Switchers", "text": "Looking to transition into tech, automation, or business domains" }
+]

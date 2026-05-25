@@ -1,0 +1,79 @@
+.admin-layout {
+    display: flex;
+    min-height: 100vh;
+    background: #f1f5f9;
+}
+
+.admin-main {
+    flex: 1;
+    min-width: 0;
+    overflow-x: hidden;
+}
+
+/* ── Top bar (mobile only) ── */
+.admin-topbar {
+    display: none;
+    align-items: center;
+    gap: .75rem;
+    height: 52px;
+    padding: 0 1rem;
+    background: #0f172a;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.admin-topbar_hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 32px;
+    height: 32px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+.admin-topbar_hamburger span {
+    display: block;
+    height: 2px;
+    background: #cbd5e1;
+    border-radius: 2px;
+    transition: background .15s;
+}
+.admin-topbar_hamburger:hover span { background: #fff; }
+
+.admin-topbar_brand {
+    font-size: .9rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: -.01em;
+}
+.admin-topbar_tag {
+    font-size: .6rem;
+    font-weight: 600;
+    background: #3b82f6;
+    color: #fff;
+    border-radius: 4px;
+    padding: 1px 5px;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    margin-left: .25rem;
+    vertical-align: middle;
+}
+
+/* ── Overlay (mobile sidebar backdrop) ── */
+.admin-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .45);
+    z-index: 300;
+}
+
+/* ── Responsive breakpoints ── */
+@media (max-width: 900px) {
+    .admin-topbar { display: flex; }
+}

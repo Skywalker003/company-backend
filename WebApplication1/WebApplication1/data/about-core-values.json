@@ -1,0 +1,6 @@
+[
+  { "id": 1, "icon": "IndianRupee", "title": "Cost-Effectiveness", "desc": "Delivering premium engineering quality without the premium price tag." },
+  { "id": 2, "icon": "Users",       "title": "Customer First",     "desc": "Every solution is built around the specific needs and goals of our clients." },
+  { "id": 3, "icon": "Lightbulb",   "title": "Innovation",         "desc": "Constantly exploring new technologies to keep our clients ahead of the curve." },
+  { "id": 4, "icon": "ShieldCheck", "title": "Reliability",        "desc": "Consistent, dependable support and solutions that our clients can count on." }
+]

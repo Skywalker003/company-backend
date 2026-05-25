@@ -1,0 +1,733 @@
+[
+  {
+    "id": 1,
+    "topic": "crm",
+    "subCategory": "Lead Generation",
+    "tag": "WEB APP",
+    "featured": true,
+    "title": "Lead Capture \u0026 Qualification System",
+    "description": "Web-based lead capture from multiple sources with automated qualification scoring, assignment rules, and follow-up tracking.",
+    "highlights": [
+      "Multi-source lead intake from web forms, calls, and referrals into a unified pipeline",
+      "Automated scoring ranks leads by industry, budget, and engagement level",
+      "Assignment rules route leads to the right sales rep based on region and product interest"
+    ],
+    "phase": ""
+  },
+  {
+    "id": 2,
+    "topic": "crm",
+    "subCategory": "Order Conversion",
+    "tag": "WEB APP",
+    "featured": true,
+    "title": "Sales Order Conversion Tracker",
+    "description": "Stage-by-stage pipeline linking leads to quotations, approvals, and confirmed sales orders with conversion rate analytics.",
+    "highlights": [
+      "Pipeline view tracks each opportunity from enquiry through quotation to order confirmation",
+      "Quotation builder generates formatted proposals with approval workflow before dispatch",
+      "Conversion rate analytics by salesperson, product category, and customer segment"
+    ]
+  },
+  {
+    "id": 3,
+    "topic": "crm",
+    "subCategory": "Customer Data Analysis",
+    "tag": "DASHBOARD",
+    "featured": true,
+    "title": "Customer Behaviour Analytics Dashboard",
+    "description": "Analytical dashboard profiling customers by purchase history, order frequency, and segment performance to guide retention strategies.",
+    "highlights": [
+      "Customer segmentation by order value, frequency, and product mix using RFM scoring",
+      "Churn risk indicators highlight accounts with declining order activity over time",
+      "Salesperson portfolio view with revenue trend and last-contact tracking per account"
+    ]
+  },
+  {
+    "id": 4,
+    "topic": "scm",
+    "subCategory": "Sales \u0026 Distribution",
+    "tag": "WEB APP",
+    "featured": true,
+    "title": "Sales \u0026 Distribution Management System",
+    "description": "Centralised system managing sales orders, dispatch planning, and distribution tracking across multiple regions and depots.",
+    "highlights": [
+      "Order placement with real-time stock availability check across all distribution depots",
+      "Dispatch scheduling assigns orders to vehicles with route and load optimisation",
+      "Delivery confirmation and proof-of-delivery capture via driver mobile interface"
+    ]
+  },
+  {
+    "id": 5,
+    "topic": "scm",
+    "subCategory": "Sales \u0026 Distribution",
+    "tag": "MOBILE APP",
+    "featured": false,
+    "title": "Field Sales Order Application",
+    "description": "Offline-capable mobile app for field sales representatives to place orders, check stock, and capture customer signatures on-site.",
+    "highlights": [
+      "Offline-first design syncs orders and product catalogue when connectivity is restored",
+      "Real-time stock availability check before order confirmation prevents shortfalls",
+      "Digital signature capture with instant PDF order acknowledgement sent to the customer"
+    ]
+  },
+  {
+    "id": 6,
+    "topic": "scm",
+    "subCategory": "Procurement",
+    "tag": "WEB APP",
+    "featured": true,
+    "title": "Procurement \u0026 Purchase Order System",
+    "description": "End-to-end procurement covering purchase requisitions, vendor selection, PO issuance, goods receipt, and three-way invoice matching.",
+    "highlights": [
+      "Purchase requisition workflow with department-level budget validation before PO creation",
+      "Vendor shortlisting and comparative quote analysis with weighted scoring criteria",
+      "Three-way matching reconciles PO, goods receipt note, and supplier invoice automatically"
+    ]
+  },
+  {
+    "id": 7,
+    "topic": "mes",
+    "subCategory": "Quality Assurance",
+    "tag": "WEB APP",
+    "featured": true,
+    "title": "In-Process Quality Audit System",
+    "description": "Digital quality audit solution capturing inspection checkpoints, defect classifications, and corrective actions directly on the shop floor.",
+    "highlights": [
+      "Configurable inspection checklists assigned to production stages and shift schedules",
+      "Defect capture with photo upload, classification codes, and severity rating",
+      "Audit summary reports with trend charts identifying recurring defect patterns by line"
+    ],
+    "phase": "Factory Phase"
+  },
+  {
+    "id": 8,
+    "topic": "mes",
+    "subCategory": "Quality Assurance",
+    "tag": "WEB APP",
+    "featured": false,
+    "title": "8D Customer Complaint Register",
+    "description": "Structured 8-Discipline complaint handling system tracking customer issues from registration through root cause analysis to permanent corrective action.",
+    "highlights": [
+      "Eight-step 8D form guides teams through containment, root cause, and corrective action",
+      "Automatic email alerts notify responsible owners at each discipline deadline",
+      "Closed-loop tracking ensures all corrective actions are verified before complaint closure"
+    ],
+    "phase": "Post Factory Phase"
+  },
+  {
+    "id": 9,
+    "topic": "mes",
+    "subCategory": "Calibration",
+    "tag": "WEB APP",
+    "featured": true,
+    "title": "Lab Instrument Calibration \u0026 MSA System",
+    "description": "Integrated laboratory calibration management and Measurement System Analysis platform covering instrument scheduling, Gauge R\u0026R studies, certificate traceability, and AIAG compliance.",
+    "highlights": [
+      "Instrument master tracks calibration frequency, due dates, standards used, and certificate history",
+      "Gauge R\u0026R study module calculates % R\u0026R, % contribution, and discrimination ratio per AIAG criteria",
+      "Out-of-calibration alerts lock instruments from production use until re-calibration is confirmed"
+    ]
+  },
+  {
+    "id": 10,
+    "topic": "mes",
+    "subCategory": "Planning \u0026 Scheduling",
+    "tag": "WEB APP",
+    "featured": true,
+    "title": "Production Planning \u0026 Scheduling System",
+    "description": "Finite capacity planning and Gantt-based scheduling system aligning production orders with machine availability, tooling, and shift patterns.",
+    "highlights": [
+      "Finite capacity scheduler accounts for machine calendars, tooling sets, and operator shifts",
+      "Interactive Gantt chart with drag-and-drop job rescheduling and conflict highlighting",
+      "Priority rules engine re-sequences jobs automatically on urgent orders or machine breakdown"
+    ]
+  },
+  {
+    "id": 11,
+    "topic": "mes",
+    "subCategory": "OEE \u0026 PMS",
+    "tag": "DASHBOARD",
+    "featured": true,
+    "title": "OEE \u0026 Production Monitoring System",
+    "description": "Real-time OEE calculation and production monitoring tracking availability, performance, and quality across machines and production lines.",
+    "highlights": [
+      "Live OEE gauge per machine and line with availability, performance, and quality breakdown",
+      "Production count vs target monitoring with shift-wise variance alerts",
+      "Downtime reason code entry builds a Pareto of top loss categories for continuous improvement"
+    ]
+  },
+  {
+    "id": 12,
+    "topic": "inventory",
+    "subCategory": "Inter Location Transfer",
+    "tag": "WEB APP",
+    "featured": true,
+    "title": "Inter-Location Stock Transfer System",
+    "description": "Stock transfer management between warehouses and depots with approval workflows, dispatch tracking, and GRN confirmation.",
+    "highlights": [
+      "Transfer requisition raised by destination site triggers source warehouse picking and dispatch",
+      "Approval workflow ensures stock availability and budget clearance before transfer dispatch",
+      "In-transit tracking with ETA updates and automatic GRN creation on delivery confirmation"
+    ]
+  },
+  {
+    "id": 13,
+    "topic": "inventory",
+    "subCategory": "Intra Location Transfer",
+    "tag": "WEB APP",
+    "featured": true,
+    "title": "Intra-Warehouse Transfer \u0026 Bin Management",
+    "description": "Internal material movement system managing bin-to-bin transfers, putaway, and pick operations within a single warehouse or factory.",
+    "highlights": [
+      "Bin-level stock map shows current occupancy, movement history, and item ageing",
+      "Putaway logic assigns optimal storage bins based on product type, weight, and velocity",
+      "Barcode-scan confirmation at each transfer step eliminates manual data entry errors"
+    ]
+  },
+  {
+    "id": 14,
+    "topic": "hrm",
+    "subCategory": "Payroll",
+    "tag": "WEB APP",
+    "featured": true,
+    "title": "Payroll Management System",
+    "description": "End-to-end payroll processing with statutory compliance for PF, ESI, and TDS, automated payslip generation, and bank disbursement integration.",
+    "highlights": [
+      "Automated PF, ESI, PT, and TDS calculations with monthly statutory filing reports",
+      "Payslip generation with custom templates distributed via email and employee self-service",
+      "Bank disbursement file generation for NEFT transfers with zero manual intervention"
+    ]
+  },
+  {
+    "id": 15,
+    "topic": "hrm",
+    "subCategory": "Employee Details Management",
+    "tag": "WEB APP",
+    "featured": true,
+    "title": "Employee Information System",
+    "description": "Centralised employee master with personal, contractual, and document records, supporting multi-department organisation structures and role history.",
+    "highlights": [
+      "Complete employee profile covering personal data, documents, bank details, and role history",
+      "Configurable organisation hierarchy supporting departments, cost centres, and reporting lines",
+      "Document expiry alerts notify HR before contracts, certifications, or ID proofs lapse"
+    ]
+  },
+  {
+    "id": 16,
+    "topic": "hrm",
+    "subCategory": "Attendance Management",
+    "tag": "WEB APP",
+    "featured": true,
+    "title": "Attendance \u0026 Leave Management System",
+    "description": "Biometric and mobile-integrated attendance tracking with leave balance management, regularisation workflows, and shift scheduling.",
+    "highlights": [
+      "Biometric and mobile clock-in integration syncs attendance records in real time",
+      "Leave balance tracking across leave types with manager approval workflow",
+      "Shift scheduling with roster templates, swap requests, and overtime compliance alerts"
+    ]
+  },
+  {
+    "id": 17,
+    "topic": "finance",
+    "subCategory": "General Accounting",
+    "tag": "WEB APP",
+    "featured": true,
+    "title": "Financial Accounting \u0026 Reporting System",
+    "description": "Multi-entity accounting system covering general ledger, accounts payable, accounts receivable, and statutory financial reporting.",
+    "highlights": [
+      "Multi-entity general ledger with automated journal entries, period-end closing, and consolidation",
+      "Accounts payable and receivable modules with ageing analysis and payment scheduling",
+      "Statutory financial reports \u2014 P\u0026L, balance sheet, and cash flow \u2014 with drill-through to source"
+    ]
+  },
+  {
+    "id": 18,
+    "topic": "finance",
+    "subCategory": "Financial Reporting",
+    "tag": "DASHBOARD",
+    "featured": true,
+    "title": "Financial Performance Dashboard",
+    "description": "Real-time financial performance dashboard with P\u0026L trends, cash flow monitoring, budget variance tracking, and executive KPI views.",
+    "highlights": [
+      "Live P\u0026L and cash flow metrics with entity-level and consolidated view switching",
+      "Budget vs actuals variance heatmap with RAG status and forecast re-projection",
+      "Scheduled report distribution sends formatted summaries to management automatically"
+    ]
+  },
+  {
+    "id": 19,
+    "topic": "mes",
+    "subCategory": "Maintenance",
+    "tag": "WEB APP",
+    "featured": true,
+    "title": "Preventive Maintenance Management System",
+    "description": "Scheduled and breakdown maintenance management system tracking work orders, spare parts consumption, and equipment downtime history.",
+    "highlights": [
+      "Preventive maintenance schedules auto-generate work orders based on machine runtime or calendar intervals",
+      "Breakdown work order capture with fault code classification, priority assignment, and technician allocation",
+      "Spare parts inventory linked to maintenance tasks with minimum stock alerts and consumption history"
+    ]
+  },
+  {
+    "id": 20,
+    "topic": "crm",
+    "subCategory": "Lead Generation",
+    "tag": "MODULE",
+    "featured": false,
+    "title": "Lead Nurturing \u0026 Email Sequence Engine",
+    "description": "Automated multi-step nurturing sequences with personalised email triggers, engagement scoring updates, and rep alerts on hot lead activity.",
+    "highlights": [
+      "Drip campaign builder configures sequences by lead stage, industry, and product interest",
+      "Email open and click events update lead scores and trigger next-step actions automatically",
+      "Rep notification alerts fire when a nurtured lead re-engages above a configurable score threshold"
+    ]
+  },
+  {
+    "id": 21,
+    "topic": "crm",
+    "subCategory": "Lead Generation",
+    "tag": "DASHBOARD",
+    "featured": false,
+    "title": "Lead Source \u0026 Campaign ROI Dashboard",
+    "description": "Multi-channel attribution dashboard tracking lead volume, cost-per-lead, and conversion rates by source to optimise marketing spend.",
+    "highlights": [
+      "Attribution model maps each lead to its originating channel \u2014 paid, organic, referral, or event",
+      "Cost-per-lead and cost-per-acquisition metrics by campaign with month-on-month trend lines",
+      "Funnel drop-off analysis highlights the stage where most leads disengage for targeted improvement"
+    ]
+  },
+  {
+    "id": 22,
+    "topic": "crm",
+    "subCategory": "Order Conversion",
+    "tag": "WEB APP",
+    "featured": false,
+    "title": "Quotation Builder \u0026 Approval Workflow",
+    "description": "Digital quotation tool with product configurator, multi-tier approval routing, version history, and automated follow-up reminders.",
+    "highlights": [
+      "Product configurator builds line-item quotes with pricing rules, discount caps, and margin validation",
+      "Multi-level approval routes quotes by deal size to team lead, manager, or director automatically",
+      "Revision history tracks all quote versions with change logs and side-by-side comparison view"
+    ]
+  },
+  {
+    "id": 23,
+    "topic": "crm",
+    "subCategory": "Order Conversion",
+    "tag": "DASHBOARD",
+    "featured": false,
+    "title": "Sales Forecast \u0026 Pipeline Velocity Dashboard",
+    "description": "Predictive pipeline tool using historical win rates and deal velocity to forecast revenue by period, product, and territory.",
+    "highlights": [
+      "Deal velocity metrics calculate average days per stage to surface stalled opportunities early",
+      "Win-rate model weights pipeline value by stage probability for accurate revenue forecasts",
+      "Territory and product-mix breakdowns let managers identify where to focus conversion efforts"
+    ]
+  },
+  {
+    "id": 24,
+    "topic": "crm",
+    "subCategory": "Customer Data Analysis",
+    "tag": "WEB APP",
+    "featured": false,
+    "title": "NPS \u0026 Customer Satisfaction Tracker",
+    "description": "Post-sale survey automation measuring NPS, CSAT, and CES with trend dashboards, segment breakdowns, and escalation alerts for detractors.",
+    "highlights": [
+      "Automated survey dispatch after delivery, support closure, or contract renewal milestones",
+      "NPS trend by product line, region, and account tier with rolling 90-day tracking",
+      "Detractor alerts route low-score responses to account managers within 24 hours for recovery action"
+    ]
+  },
+  {
+    "id": 25,
+    "topic": "crm",
+    "subCategory": "Customer Data Analysis",
+    "tag": "DASHBOARD",
+    "featured": false,
+    "title": "Account Health \u0026 Retention Dashboard",
+    "description": "360\u00B0 account health view combining order frequency, complaint history, contract status, and engagement signals into a single retention score.",
+    "highlights": [
+      "Health score aggregates recency, frequency, spend, and support ticket volume per account",
+      "Churn risk heatmap surfaces accounts trending negative before renewal or re-order date",
+      "Relationship timeline shows all touchpoints \u2014 calls, orders, complaints \u2014 in chronological view"
+    ]
+  },
+  {
+    "id": 26,
+    "topic": "scm",
+    "subCategory": "Sales \u0026 Distribution",
+    "tag": "WEB APP",
+    "featured": false,
+    "title": "Distributor Portal \u0026 Secondary Sales Tracker",
+    "description": "Web portal for distributors to place orders, view stock availability, and report secondary sales with territory performance dashboards for the principal.",
+    "highlights": [
+      "Distributor self-service portal for order placement, invoice download, and outstanding tracking",
+      "Secondary sales reporting captures sell-through data from distributor to retailer in real time",
+      "Territory dashboard compares primary vs secondary offtake to identify slow-moving depots"
+    ]
+  },
+  {
+    "id": 27,
+    "topic": "scm",
+    "subCategory": "Procurement",
+    "tag": "WEB APP",
+    "featured": false,
+    "title": "Vendor Performance Management System",
+    "description": "Supplier scorecard platform tracking quality, on-time delivery, and pricing performance with periodic review workflows and historical rating trends.",
+    "highlights": [
+      "Scorecard captures quality rejection rate, delivery adherence, and price variance per supplier",
+      "Quarterly review workflow routes performance reports to procurement heads for sign-off",
+      "Vendor ranking and approved-supplier list management with automatic disqualification triggers"
+    ]
+  },
+  {
+    "id": 28,
+    "topic": "scm",
+    "subCategory": "Procurement",
+    "tag": "MODULE",
+    "featured": false,
+    "title": "Contract Management \u0026 Renewal Tracker",
+    "description": "Centralised vendor contract repository with clause tracking, approval workflows, and automated alerts for upcoming renewals and expiry dates.",
+    "highlights": [
+      "Contract repository stores signed agreements with clause tagging and full-text search",
+      "Renewal calendar sends tiered alerts at 90, 30, and 7 days before expiry to procurement team",
+      "Approval workflow routes new and amended contracts through legal, finance, and management sign-off"
+    ]
+  },
+  {
+    "id": 33,
+    "topic": "mes",
+    "subCategory": "Calibration",
+    "tag": "MODULE",
+    "featured": false,
+    "title": "NABL Certification Management System",
+    "description": "Accreditation management system for NABL-certified calibration labs covering scope documentation, quality manual version control, inter-laboratory comparison, and audit readiness tracking.",
+    "highlights": [
+      "Scope of accreditation register maintains approved parameters, ranges, and uncertainties per discipline",
+      "Inter-laboratory comparison (ILC/PT) module schedules rounds, records results, and flags outliers",
+      "Audit-readiness checklist tracks open non-conformances, corrective actions, and closure deadlines"
+    ]
+  },
+  {
+    "id": 35,
+    "topic": "mes",
+    "subCategory": "Planning \u0026 Scheduling",
+    "tag": "WEB APP",
+    "featured": false,
+    "title": "Material Requirements Planning (MRP) System",
+    "description": "Demand-driven MRP engine computing net material requirements from sales orders via BOM explosion, accounting for current stock and open purchase orders.",
+    "highlights": [
+      "Multi-level BOM explosion converts finished goods demand into raw material and sub-assembly requirements",
+      "Net requirement calculation deducts on-hand stock and open POs before raising procurement suggestions",
+      "Exception messages flag late supply, excess stock, and pegging mismatches for planner action"
+    ]
+  },
+  {
+    "id": 36,
+    "topic": "mes",
+    "subCategory": "Planning \u0026 Scheduling",
+    "tag": "MOBILE APP",
+    "featured": false,
+    "title": "Shop Floor Execution \u0026 Work Order Tracker",
+    "description": "Mobile-first shop floor app for operators to receive work orders, update operation progress, report material consumption, and flag production exceptions.",
+    "highlights": [
+      "Work order queue on operator tablet shows sequence, instructions, and target cycle times per job",
+      "Progress updates trigger real-time schedule refresh and alert planners when jobs fall behind",
+      "Material consumption recording at each operation feeds live WIP and stock deduction automatically"
+    ]
+  },
+  {
+    "id": 37,
+    "topic": "mes",
+    "subCategory": "OEE \u0026 PMS",
+    "tag": "DASHBOARD",
+    "featured": false,
+    "title": "Energy Monitoring \u0026 Consumption Dashboard",
+    "description": "Machine-level energy consumption tracking with unit-per-part benchmarks, anomaly detection alerts, and trend analysis for identifying cost-reduction opportunities.",
+    "highlights": [
+      "Per-machine kWh tracking benchmarked against standard energy consumption per unit produced",
+      "Anomaly alerts fire when a machine exceeds its energy baseline by a configurable threshold",
+      "Energy cost trend by line and shift helps maintenance teams target high-consumption equipment first"
+    ]
+  },
+  {
+    "id": 38,
+    "topic": "mes",
+    "subCategory": "OEE \u0026 PMS",
+    "tag": "MODULE",
+    "featured": false,
+    "title": "Shift Performance \u0026 End-of-Shift Report System",
+    "description": "Automated shift-end report capturing production output, downtime events, quality rejections, and efficiency metrics per team with digital supervisor sign-off.",
+    "highlights": [
+      "Auto-populated shift report pulls OEE data, production counts, and top downtime reasons at shift end",
+      "Supervisor digital sign-off with comment capability before report is locked and shared with management",
+      "Shift-comparison view shows day, afternoon, and night team performance on a single screen"
+    ]
+  },
+  {
+    "id": 39,
+    "topic": "mes",
+    "subCategory": "Maintenance",
+    "tag": "WEB APP",
+    "featured": false,
+    "title": "Spare Parts \u0026 Maintenance Store Management",
+    "description": "Maintenance storeroom module managing spare parts stock levels, issue tracking against work orders, min-max replenishment alerts, and vendor reorder automation.",
+    "highlights": [
+      "Parts master links each spare to compatible equipment with criticality classification and lead time",
+      "Issue against work order deducts stock in real time and updates consumption history per machine",
+      "Min-max reorder alerts trigger purchase requisitions automatically when stock falls below safety level"
+    ]
+  },
+  {
+    "id": 40,
+    "topic": "mes",
+    "subCategory": "Maintenance",
+    "tag": "DASHBOARD",
+    "featured": false,
+    "title": "MTTR / MTBF \u0026 Failure Analysis Dashboard",
+    "description": "Reliability analytics dashboard calculating mean time to repair and between failures, Pareto of failure modes, and equipment reliability trends for maintenance planning.",
+    "highlights": [
+      "MTTR and MTBF calculated per machine and equipment class with rolling 3-month and 12-month views",
+      "Failure mode Pareto ranks top breakdown causes by frequency and total downtime impact",
+      "Reliability trend charts surface deteriorating equipment before failure frequency becomes critical"
+    ]
+  },
+  {
+    "id": 41,
+    "topic": "inventory",
+    "subCategory": "Inter Location Transfer",
+    "tag": "DASHBOARD",
+    "featured": false,
+    "title": "Multi-Depot Stock Visibility Dashboard",
+    "description": "Real-time consolidated stock view across all warehouses and depots with ageing analysis, slow-moving inventory alerts, and inter-depot rebalancing suggestions.",
+    "highlights": [
+      "Unified stock position across all locations updated in real time as transactions are posted",
+      "Ageing buckets highlight stock older than 30, 60, and 90 days for clearance prioritisation",
+      "Rebalancing recommendations suggest inter-depot transfers when one location has excess and another has shortage"
+    ]
+  },
+  {
+    "id": 42,
+    "topic": "inventory",
+    "subCategory": "Inter Location Transfer",
+    "tag": "WEB APP",
+    "featured": false,
+    "title": "Return Material \u0026 Reverse Logistics System",
+    "description": "Return-to-warehouse workflow managing damaged goods, excess stock returns, and inter-depot credits with full audit trail and supplier debit note generation.",
+    "highlights": [
+      "Return authorisation workflow requires source location approval before goods are dispatched back",
+      "Condition grading at receiving determines whether returned stock is restocked, reworked, or scrapped",
+      "Credit note and debit note generation automates inter-company accounting for return transactions"
+    ]
+  },
+  {
+    "id": 43,
+    "topic": "inventory",
+    "subCategory": "Intra Location Transfer",
+    "tag": "WEB APP",
+    "featured": false,
+    "title": "Cycle Count \u0026 Physical Inventory System",
+    "description": "Scheduled and ad-hoc cycle counting with variance analysis, system reconciliation workflow, and audit trail for maintaining continuous inventory accuracy.",
+    "highlights": [
+      "Cycle count schedule assigns bins and zones to counters with blind-count enforcement to prevent bias",
+      "Variance report flags count differences above tolerance for supervisor review and approval before posting",
+      "Reconciliation history provides full audit trail of all stock adjustments with reason codes"
+    ]
+  },
+  {
+    "id": 44,
+    "topic": "inventory",
+    "subCategory": "Intra Location Transfer",
+    "tag": "MODULE",
+    "featured": false,
+    "title": "Goods Receipt \u0026 Put-Away Management System",
+    "description": "Receiving dock management capturing GRN against purchase orders, quality clearance, and system-directed put-away instructions by product type and bin availability.",
+    "highlights": [
+      "GRN screen matches received quantity and batch against open PO lines with over-receipt alerts",
+      "Quality hold status prevents put-away until inspection clearance is received from QC team",
+      "Put-away directives assign optimal bin locations based on product zone rules and current occupancy"
+    ]
+  },
+  {
+    "id": 45,
+    "topic": "hrm",
+    "subCategory": "Payroll",
+    "tag": "WEB APP",
+    "featured": false,
+    "title": "Expense \u0026 Reimbursement Management System",
+    "description": "Employee expense claim portal with receipt upload, policy validation, multi-level approval, and direct payroll integration for same-cycle reimbursement.",
+    "highlights": [
+      "Mobile receipt capture with OCR pre-fills claim amount, date, and vendor for quick submission",
+      "Policy engine validates expense against grade-level limits and eligible categories before routing",
+      "Approved claims integrate into the current payroll run for same-month disbursement automatically"
+    ]
+  },
+  {
+    "id": 46,
+    "topic": "hrm",
+    "subCategory": "Payroll",
+    "tag": "MODULE",
+    "featured": false,
+    "title": "Salary Revision \u0026 Increment Management System",
+    "description": "Annual salary review tool supporting bulk revisions within grade bands, approval workflows, and automated increment letter generation with payroll effective date.",
+    "highlights": [
+      "Grade-band salary matrix enforces min-max boundaries during bulk increment entry",
+      "Approval chain routes revision proposals through HR, department head, and finance before activation",
+      "Increment letters auto-generated from approved revision with employee self-service download"
+    ]
+  },
+  {
+    "id": 47,
+    "topic": "hrm",
+    "subCategory": "Employee Details Management",
+    "tag": "WEB APP",
+    "featured": false,
+    "title": "Onboarding \u0026 Exit Management System",
+    "description": "Structured onboarding and offboarding workflows covering IT provisioning, asset allocation, policy acknowledgement, exit interviews, and full-and-final settlement.",
+    "highlights": [
+      "Day-one checklist auto-assigns IT setup, access provisioning, and induction tasks to responsible teams",
+      "Exit workflow triggers asset retrieval, access revocation, and knowledge transfer tasks in sequence",
+      "Full-and-final settlement calculator computes pending leaves, deductions, and last-day payables"
+    ]
+  },
+  {
+    "id": 48,
+    "topic": "hrm",
+    "subCategory": "Employee Details Management",
+    "tag": "MODULE",
+    "featured": false,
+    "title": "Training \u0026 Competency Management System",
+    "description": "Training calendar with skill gap mapping, certification tracking, mandatory compliance training enforcement, and completion dashboards for managers.",
+    "highlights": [
+      "Skill matrix maps required vs actual competencies per role, highlighting gaps for L\u0026D planning",
+      "Mandatory training tracker enforces completion deadlines with automated escalation reminders",
+      "Certification expiry alerts notify employees and managers before licences or qualifications lapse"
+    ]
+  },
+  {
+    "id": 49,
+    "topic": "hrm",
+    "subCategory": "Attendance Management",
+    "tag": "MODULE",
+    "featured": false,
+    "title": "Overtime \u0026 Compensatory Off Management System",
+    "description": "OT pre-approval and post-approval workflows with statutory hour-limit checks, compensatory off accrual tracking, and payroll integration for overtime payout.",
+    "highlights": [
+      "OT pre-approval request captures planned hours, reason, and supervisor authorisation before work",
+      "Statutory limit engine prevents OT approval beyond weekly and monthly hour caps per labour law",
+      "Comp-off balance accrues automatically from approved OT and can be applied against future leave requests"
+    ]
+  },
+  {
+    "id": 50,
+    "topic": "hrm",
+    "subCategory": "Attendance Management",
+    "tag": "WEB APP",
+    "featured": false,
+    "title": "Workforce Scheduling \u0026 Roster Management System",
+    "description": "Shift planning tool with drag-and-drop roster builder, skill-based staff assignment, swap request workflows, and real-time attendance gap alerts for supervisors.",
+    "highlights": [
+      "Monthly roster builder assigns shifts by skill requirement with minimum headcount validation per slot",
+      "Swap request workflow allows employees to exchange shifts with peer approval and supervisor confirmation",
+      "Real-time gap alerts notify supervisors when planned attendance falls below required staffing levels"
+    ]
+  },
+  {
+    "id": 51,
+    "topic": "finance",
+    "subCategory": "General Accounting",
+    "tag": "WEB APP",
+    "featured": false,
+    "title": "GST Compliance \u0026 Filing Management System",
+    "description": "Automated GST return preparation covering GSTR-1, GSTR-3B, and ITC reconciliation with filing status tracking and tax liability dashboard.",
+    "highlights": [
+      "GSTR-1 auto-populates from sales register with invoice-level B2B and B2C breakup validation",
+      "ITC reconciliation matches purchase register against GSTR-2B to flag mismatches before filing",
+      "Filing status dashboard tracks due dates, filed returns, and pending tax liabilities across entities"
+    ]
+  },
+  {
+    "id": 52,
+    "topic": "finance",
+    "subCategory": "General Accounting",
+    "tag": "MODULE",
+    "featured": false,
+    "title": "Fixed Asset Management System",
+    "description": "Asset register tracking acquisition, depreciation schedules, revaluation, disposal, and physical verification with full audit trail for financial and tax reporting.",
+    "highlights": [
+      "Asset master captures acquisition cost, useful life, depreciation method, and location assignment",
+      "Automated depreciation posting runs monthly with WDV and SLM method support per asset class",
+      "Physical verification module records tagged assets by location for reconciliation against the register"
+    ]
+  },
+  {
+    "id": 53,
+    "topic": "finance",
+    "subCategory": "Financial Reporting",
+    "tag": "DASHBOARD",
+    "featured": false,
+    "title": "Management Information System (MIS) Report Suite",
+    "description": "Automated MIS report generation covering revenue, cost, margins, and variances with scheduled distribution to management and drill-through to transaction level.",
+    "highlights": [
+      "MIS templates cover P\u0026L, collection, outstanding, and cost centre performance in one configurable suite",
+      "Scheduled report runner sends formatted Excel and PDF summaries to defined recipient groups",
+      "Drill-through links from summary figures to underlying journal entries for instant source verification"
+    ]
+  },
+  {
+    "id": 54,
+    "topic": "finance",
+    "subCategory": "Financial Reporting",
+    "tag": "DASHBOARD",
+    "featured": false,
+    "title": "Audit Trail \u0026 Financial Controls Dashboard",
+    "description": "Compliance monitoring dashboard tracking financial controls, user access activity, policy adherence, and audit findings with remediation status and ageing.",
+    "highlights": [
+      "Immutable audit log captures every financial transaction change with user, timestamp, and before/after values",
+      "Controls checklist monitors period-end closure tasks with completion status and responsible owner",
+      "Open audit finding tracker ages unresolved items and escalates overdue remediations to management"
+    ]
+  },
+  {
+    "id": 55,
+    "topic": "mes",
+    "subCategory": "Machine Data Monitoring",
+    "tag": "IOT",
+    "featured": true,
+    "title": "Energy Monitoring System (EMS)",
+    "description": "Machine and line-level energy monitoring platform capturing real-time kWh consumption, peak demand, power factor, and unit-per-part benchmarks across the shopfloor.",
+    "highlights": [
+      "Smart meter integration streams kWh, kVA, and power factor per machine at 1-minute resolution",
+      "Unit-per-part benchmark compares actual energy consumption against standard to flag inefficiencies",
+      "Peak demand alerts and load-shedding recommendations help reduce maximum demand charges"
+    ]
+  },
+  {
+    "id": 56,
+    "topic": "mes",
+    "subCategory": "Machine Data Monitoring",
+    "tag": "IOT",
+    "featured": false,
+    "title": "Temperature Monitoring System",
+    "description": "Continuous multi-point temperature monitoring using thermocouple and RTD sensors across machines, furnaces, cold stores, and process areas with SPC-based alarm management.",
+    "highlights": [
+      "Multi-point sensor network monitors up to 256 temperature zones with 5-second polling intervals",
+      "SPC control chart triggers alarms when temperature trends outside upper or lower control limits",
+      "Historical temperature logs with batch traceability support quality records and process audits"
+    ]
+  },
+  {
+    "id": 57,
+    "topic": "mes",
+    "subCategory": "Machine Data Monitoring",
+    "tag": "IOT",
+    "featured": false,
+    "title": "Condition \u0026 Utility Monitoring System (CMS \u0026 UMS)",
+    "description": "Unified platform combining machine condition monitoring (vibration, bearing health, noise) with utility monitoring (compressed air, water, steam) for complete asset and facility visibility.",
+    "highlights": [
+      "Vibration FFT analysis detects bearing wear, imbalance, and looseness before failure occurs",
+      "Compressed air and steam flow meters flag leaks and pressure drops against baseline benchmarks",
+      "Single dashboard consolidates CMS and UMS alerts, trends, and corrective action status"
+    ]
+  }
+]

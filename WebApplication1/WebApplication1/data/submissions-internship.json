@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "submittedAt": "2026-05-13T05:58:47.2357901Z",
+    "fullName": "srivikas sr",
+    "gender": "Male",
+    "dob": "2008-05-13",
+    "email": "srivikasramadas@gmail.com",
+    "phone": "\u002B919597632495",
+    "fullAddress": "7, 120ft road survey colony, sambakulam main road, k pudur, madurai",
+    "district": "Madurai",
+    "state": "Tamil Nadu",
+    "pincode": "625007",
+    "collegeName": "ihihi",
+    "collegeLocation": "madurai",
+    "registerNo": "121312",
+    "qualification": "UG",
+    "department": "cse",
+    "currentStatus": "Completed",
+    "passedYear": "2026",
+    "domain": "Software Development",
+    "role": "Frontend Development",
+    "mode": "On-site",
+    "duration": "3 Months",
+    "startDate": "2026-05-12",
+    "endDate": "2026-08-12",
+    "skills": [
+      "react",
+      "js",
+      "css",
+      "html"
+    ],
+    "tools": [
+      "vs",
+      "git"
+    ],
+    "experience": "good",
+    "resumeUrl": "/uploads/fc1e7007-bb51-4870-a6b3-601181b74655.pdf",
+    "bonafideUrl": "/uploads/87b6c3a5-0a22-413f-a662-20df1404206e.pdf",
+    "idProofUrl": "/uploads/a26aa77e-74cb-41dd-bcb1-c89c44754e79.pdf"
+  }
+]

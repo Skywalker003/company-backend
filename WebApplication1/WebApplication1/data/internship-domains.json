@@ -1,0 +1,116 @@
+[
+  {
+    "id": 1,
+    "title": "Software Development",
+    "badge": "TECH",
+    "badgeColor": "#ef4444",
+    "desc": "Build real-world applications across web, mobile, and AI using modern tech stacks.",
+    "domainKey": "Software Development",
+    "image": "/uploads/81b5b6fa-bdc1-4169-9fd4-b8c435838382.png",
+    "rolesLabel": "Internship Available",
+    "roles": [
+      "Frontend Development",
+      "Backend Development",
+      "Full Stack Development",
+      "Mobile App Development",
+      "AI/ML",
+      "Networking"
+    ],
+    "tagsLabel": "Tech Stack",
+    "tagGroups": [
+      {
+        "label": "Frontend",
+        "tags": [
+          "HTML5",
+          "CSS3",
+          "JavaScript",
+          "React.js",
+          "Angular"
+        ]
+      },
+      {
+        "label": "Backend",
+        "tags": [
+          "Node.js",
+          "Python",
+          "Java",
+          "C#",
+          "Laravel (PHP)"
+        ]
+      },
+      {
+        "label": "Database",
+        "tags": [
+          "MySQL",
+          "PostgreSQL",
+          "MS SQL Server"
+        ]
+      },
+      {
+        "label": "Mobile Development",
+        "tags": [
+          "Flutter",
+          "Android (Java/Kotlin)",
+          "iOS (Swift / Xcode)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Industrial Automation (Industry 4.0)",
+    "badge": "CORE",
+    "badgeColor": "#3b82f6",
+    "desc": "Gain hands-on experience with cutting-edge industrial systems, PLCs, IoT and SCADA technologies.",
+    "domainKey": "Industrial Automation",
+    "image": "/images/internpage3.png",
+    "rolesLabel": "Internship Available",
+    "roles": [
+      "PLC Programming",
+      "Embedded Systems",
+      "SCADA \u0026 HMI",
+      "IoT \u0026 IIoT Development"
+    ],
+    "tagsLabel": "Skills Covered",
+    "tagGroups": [
+      {
+        "label": "",
+        "tags": [
+          "Electrical Basics",
+          "Basic Wiring",
+          "PLC Programming",
+          "Embedded Systems",
+          "HMI",
+          "SCADA"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Administration",
+    "badge": "OPERATIONS",
+    "badgeColor": "#6b7280",
+    "desc": "Develop business acumen and operational skills across HR, project management and business analysis.",
+    "domainKey": "Administration",
+    "image": "/images/internpage4.png",
+    "rolesLabel": "Internship Available",
+    "roles": [
+      "Business Analysis \u0026 Market Research",
+      "HR \u0026 Operations Trainee",
+      "Finance \u0026 Accounts Trainee"
+    ],
+    "tagsLabel": "Sub-Domains",
+    "tagGroups": [
+      {
+        "label": "",
+        "tags": [
+          "Human Resources",
+          "Project Management",
+          "Business Operations",
+          "Finance \u0026 Accounts"
+        ]
+      }
+    ]
+  }
+]

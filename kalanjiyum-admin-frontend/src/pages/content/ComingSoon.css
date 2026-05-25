@@ -1,0 +1,14 @@
+.cs-page { padding: 2rem; }
+
+.cs-body {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 3rem;
+    text-align: center;
+    color: #64748b;
+    font-size: .875rem;
+}
+.cs-icon { color: #94a3b8; margin-bottom: 1rem; }
+.cs-body p { margin: .25rem 0; }
+.cs-hint { font-size: .775rem; color: #94a3b8; margin-top: .5rem; }
