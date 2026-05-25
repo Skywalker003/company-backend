@@ -62,7 +62,11 @@ var app = builder.Build();
 using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<WebApplication1.Services.AppDbContext>();
-    try { WebApplication1.Services.DataSeeder.Seed(db); }
+    try
+    {
+        db.Database.Migrate();
+        WebApplication1.Services.DataSeeder.Seed(db);
+    }
     catch (Exception ex) { Console.Error.WriteLine($"[DataSeeder] {ex.Message}"); }
 }
 
