@@ -6,6 +6,7 @@ const fileUrl = (path) => path ? (path.startsWith('http') ? path : ORIGIN + path
 import PageHeader from '../../components/ui/PageHeader'
 import DataTable from '../../components/ui/DataTable'
 import DetailModal from '../../components/ui/DetailModal'
+import ConfirmModal from '../../components/ui/ConfirmModal'
 import FileViewer from './FileViewer'
 import { downloadAs } from './downloadAs'
 import { getInternshipSubmissions, markSubmissionViewed, getViewedSubmissions, deleteInternshipSubmission } from '../../api/submissions'
@@ -135,9 +136,11 @@ export default function InternshipApplications() {
     const [loading, setLoading]   = useState(false)
     const [selected, setSelected] = useState(null)
     const [viewFile, setViewFile] = useState(null)
-    const [search, setSearch]       = useState('')
-    const [exporting, setExporting] = useState(false)
-    const [viewedIds, setViewedIds] = useState(new Set())
+    const [search, setSearch]         = useState('')
+    const [exporting, setExporting]   = useState(false)
+    const [viewedIds, setViewedIds]   = useState(new Set())
+    const [deletingId, setDeletingId] = useState(null)
+    const [deleteLoading, setDeleteLoading] = useState(false)
 
     const LIMIT = 20
 
@@ -164,11 +167,12 @@ export default function InternshipApplications() {
             .finally(() => setExporting(false))
     }
 
-    const handleDelete = (id) => {
-        if (!window.confirm('Delete this application? This cannot be undone.')) return
-        deleteInternshipSubmission(id)
-            .then(() => { setRows(prev => prev.filter(r => r.id !== id)); setTotal(t => t - 1) })
+    const confirmDelete = () => {
+        setDeleteLoading(true)
+        deleteInternshipSubmission(deletingId)
+            .then(() => { setRows(prev => prev.filter(r => r.id !== deletingId)); setTotal(t => t - 1); setDeletingId(null) })
             .catch(() => {})
+            .finally(() => setDeleteLoading(false))
     }
 
     const rowsWithAction = rows.map(r => ({
@@ -179,7 +183,7 @@ export default function InternshipApplications() {
             setViewedIds(prev => new Set([...prev, r.id]))
             setSelected(r)
         },
-        __onDelete: () => handleDelete(r.id),
+        __onDelete: () => setDeletingId(r.id),
     }))
     const filtered = rowsWithAction.filter(r => {
         if (!search) return true
@@ -247,6 +251,7 @@ export default function InternshipApplications() {
             {viewFile && (
                 <FileViewer url={viewFile.url} label={viewFile.label} onClose={() => setViewFile(null)} />
             )}
+            {deletingId && <ConfirmModal onConfirm={confirmDelete} onCancel={() => setDeletingId(null)} loading={deleteLoading} />}
         </div>
     )
 }
