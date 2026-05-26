@@ -170,7 +170,7 @@ export default function InternshipApplications() {
     const confirmDelete = () => {
         setDeleteLoading(true)
         deleteInternshipSubmission(deletingId)
-            .then(() => { setRows(prev => prev.filter(r => r.id !== deletingId)); setTotal(t => t - 1); setDeletingId(null) })
+            .then(() => { setRows(prev => prev.filter(r => r.id !== deletingId)); setTotal(t => t - 1); setViewedIds(prev => { const s = new Set(prev); s.delete(deletingId); return s }); setDeletingId(null) })
             .catch(() => {})
             .finally(() => setDeleteLoading(false))
     }

@@ -103,6 +103,8 @@ public class SubmissionsController(AppDbContext db, IWebHostEnvironment env) : C
         var item = db.ContactEnquiries.Find(id);
         if (item == null) return NotFound();
         db.ContactEnquiries.Remove(item);
+        var viewed = db.ViewedSubmissions.Find(1);
+        if (viewed != null) viewed.Contact = viewed.Contact.Where(i => i != id).ToArray();
         db.SaveChanges();
         return NoContent();
     }
@@ -113,6 +115,8 @@ public class SubmissionsController(AppDbContext db, IWebHostEnvironment env) : C
         var item = db.JobApplications.Find(id);
         if (item == null) return NotFound();
         db.JobApplications.Remove(item);
+        var viewed = db.ViewedSubmissions.Find(1);
+        if (viewed != null) viewed.Jobs = viewed.Jobs.Where(i => i != id).ToArray();
         db.SaveChanges();
         return NoContent();
     }
@@ -123,6 +127,8 @@ public class SubmissionsController(AppDbContext db, IWebHostEnvironment env) : C
         var item = db.InternshipApplications.Find(id);
         if (item == null) return NotFound();
         db.InternshipApplications.Remove(item);
+        var viewed = db.ViewedSubmissions.Find(1);
+        if (viewed != null) viewed.Intern = viewed.Intern.Where(i => i != id).ToArray();
         db.SaveChanges();
         return NoContent();
     }
