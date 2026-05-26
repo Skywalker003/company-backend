@@ -95,6 +95,38 @@ public class SubmissionsController(AppDbContext db, IWebHostEnvironment env) : C
         return Ok(new { url = $"/uploads/{filename}" });
     }
 
+    // ── Delete ────────────────────────────────────────────────────────────────
+
+    [HttpDelete("contact/{id}"), Authorize]
+    public IActionResult DeleteContact(int id)
+    {
+        var item = db.ContactEnquiries.Find(id);
+        if (item == null) return NotFound();
+        db.ContactEnquiries.Remove(item);
+        db.SaveChanges();
+        return NoContent();
+    }
+
+    [HttpDelete("jobs/{id}"), Authorize]
+    public IActionResult DeleteJob(int id)
+    {
+        var item = db.JobApplications.Find(id);
+        if (item == null) return NotFound();
+        db.JobApplications.Remove(item);
+        db.SaveChanges();
+        return NoContent();
+    }
+
+    [HttpDelete("internship/{id}"), Authorize]
+    public IActionResult DeleteInternship(int id)
+    {
+        var item = db.InternshipApplications.Find(id);
+        if (item == null) return NotFound();
+        db.InternshipApplications.Remove(item);
+        db.SaveChanges();
+        return NoContent();
+    }
+
     // ── Viewed tracking ───────────────────────────────────────────────────────
 
     [HttpGet("viewed"), Authorize]

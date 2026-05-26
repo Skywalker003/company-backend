@@ -133,6 +133,30 @@
     border-color: #a5b4fc;
 }
 
+.sub-actions {
+    display: inline-flex;
+    align-items: center;
+    gap: .4rem;
+}
+
+.sub-del-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: .3rem .4rem;
+    border-radius: 6px;
+    border: 1px solid #fecaca;
+    background: #fff1f2;
+    color: #dc2626;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: background .15s, border-color .15s;
+}
+.sub-del-btn:hover {
+    background: #fee2e2;
+    border-color: #f87171;
+}
+
 .sub-detail {
     display: grid;
     grid-template-columns: 1fr 1fr;

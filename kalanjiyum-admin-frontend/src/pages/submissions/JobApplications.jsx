@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react'
-import { Eye, Download, ExternalLink, RefreshCw, FileDown } from 'lucide-react'
+import { Eye, Trash2, Download, ExternalLink, RefreshCw, FileDown } from 'lucide-react'
 
 const ORIGIN = (() => { try { return new URL(import.meta.env.VITE_API_BASE_URL ?? '').origin } catch { return '' } })()
 const fileUrl = (path) => path ? (path.startsWith('http') ? path : ORIGIN + path) : null
@@ -8,7 +8,7 @@ import DataTable from '../../components/ui/DataTable'
 import DetailModal from '../../components/ui/DetailModal'
 import FileViewer from './FileViewer'
 import { downloadAs } from './downloadAs'
-import { getJobSubmissions, markSubmissionViewed, getViewedSubmissions } from '../../api/submissions'
+import { getJobSubmissions, markSubmissionViewed, getViewedSubmissions, deleteJobSubmission } from '../../api/submissions'
 import { exportCsv } from './exportCsv'
 import './Submissions.css'
 
@@ -39,11 +39,12 @@ const COLUMNS = [
     { key: 'email',       label: 'Email',    width: 200 },
     { key: 'phone',       label: 'Phone',    width: 130 },
     { key: 'position',    label: 'Position', width: 200 },
-    { key: 'actions',     label: '',         width: 80,
+    { key: 'actions', label: '', width: 120,
         render: r => (
-            <button className="sub-view-btn" onClick={r.__onView}>
-                <Eye size={14} /> View
-            </button>
+            <span className="sub-actions">
+                <button className="sub-view-btn" onClick={r.__onView}><Eye size={14} /> View</button>
+                <button className="sub-del-btn" onClick={r.__onDelete}><Trash2 size={14} /></button>
+            </span>
         )
     },
 ]
@@ -118,6 +119,13 @@ export default function JobApplications() {
             .finally(() => setExporting(false))
     }
 
+    const handleDelete = (id) => {
+        if (!window.confirm('Delete this application? This cannot be undone.')) return
+        deleteJobSubmission(id)
+            .then(() => { setRows(prev => prev.filter(r => r.id !== id)); setTotal(t => t - 1) })
+            .catch(() => {})
+    }
+
     const rowsWithAction = rows.map(r => ({
         ...r,
         __viewed: viewedIds.has(r.id),
@@ -125,7 +133,8 @@ export default function JobApplications() {
             markSubmissionViewed('jobs', r.id).catch(() => {})
             setViewedIds(prev => new Set([...prev, r.id]))
             setSelected(r)
-        }
+        },
+        __onDelete: () => handleDelete(r.id),
     }))
     const filtered = rowsWithAction.filter(r => {
         if (!search) return true
@@ -176,7 +185,10 @@ export default function JobApplications() {
                                     <span className="sub-mcard_date">{fmtShort(r.submittedAt)}</span>
                                 </div>
                             </div>
-                            <button className="sub-view-btn" onClick={r.__onView}><Eye size={14}/> View</button>
+                            <span className="sub-actions">
+                                <button className="sub-view-btn" onClick={r.__onView}><Eye size={14}/> View</button>
+                                <button className="sub-del-btn" onClick={r.__onDelete}><Trash2 size={14}/></button>
+                            </span>
                         </div>
                     )
                 }}

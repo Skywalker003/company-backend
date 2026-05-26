@@ -1,9 +1,9 @@
 import { useState, useEffect, useCallback } from 'react'
-import { Eye, RefreshCw, FileDown } from 'lucide-react'
+import { Eye, Trash2, RefreshCw, FileDown } from 'lucide-react'
 import PageHeader from '../../components/ui/PageHeader'
 import DataTable from '../../components/ui/DataTable'
 import DetailModal from '../../components/ui/DetailModal'
-import { getContactSubmissions, markSubmissionViewed, getViewedSubmissions } from '../../api/submissions'
+import { getContactSubmissions, markSubmissionViewed, getViewedSubmissions, deleteContactSubmission } from '../../api/submissions'
 import { exportCsv } from './exportCsv'
 import './Submissions.css'
 
@@ -32,11 +32,12 @@ const COLUMNS = [
     { key: 'email',       label: 'Email',        width: 200 },
     { key: 'phone',       label: 'Phone',        width: 130 },
     { key: 'orgName',     label: 'Organisation', width: 160, render: r => r.orgName || '—' },
-    { key: 'actions',     label: '',             width: 60,
+    { key: 'actions', label: '', width: 120,
         render: r => (
-            <button className="sub-view-btn" onClick={r.__onView}>
-                <Eye size={14} /> View
-            </button>
+            <span className="sub-actions">
+                <button className="sub-view-btn" onClick={r.__onView}><Eye size={14} /> View</button>
+                <button className="sub-del-btn" onClick={r.__onDelete}><Trash2 size={14} /></button>
+            </span>
         )
     },
 ]
@@ -90,6 +91,13 @@ export default function ContactEnquiries() {
             .finally(() => setExporting(false))
     }
 
+    const handleDelete = (id) => {
+        if (!window.confirm('Delete this submission? This cannot be undone.')) return
+        deleteContactSubmission(id)
+            .then(() => { setRows(prev => prev.filter(r => r.id !== id)); setTotal(t => t - 1) })
+            .catch(() => {})
+    }
+
     const rowsWithAction = rows.map(r => ({
         ...r,
         __viewed: viewedIds.has(r.id),
@@ -97,7 +105,8 @@ export default function ContactEnquiries() {
             markSubmissionViewed('contact', r.id).catch(() => {})
             setViewedIds(prev => new Set([...prev, r.id]))
             setSelected(r)
-        }
+        },
+        __onDelete: () => handleDelete(r.id),
     }))
     const filtered = rowsWithAction.filter(r => {
         if (!search) return true
@@ -147,7 +156,10 @@ export default function ContactEnquiries() {
                                     <span className="sub-mcard_date">{fmtShort(r.submittedAt)}</span>
                                 </div>
                             </div>
-                            <button className="sub-view-btn" onClick={r.__onView}><Eye size={14}/> View</button>
+                            <span className="sub-actions">
+                                <button className="sub-view-btn" onClick={r.__onView}><Eye size={14}/> View</button>
+                                <button className="sub-del-btn" onClick={r.__onDelete}><Trash2 size={14}/></button>
+                            </span>
                         </div>
                     )
                 }}
