@@ -5,7 +5,7 @@ import {
     Home, Info, Settings, MapPin, Image, FolderKanban, Clock
 } from 'lucide-react'
 import PageHeader from '../components/ui/PageHeader'
-import { getContactSubmissions, getJobSubmissions, getInternshipSubmissions, getViewedSubmissions } from '../api/submissions'
+import { getContactSubmissions, getJobSubmissions, getInternshipSubmissions, getUnreadCounts } from '../api/submissions'
 import './Dashboard.css'
 
 const SUBMISSIONS = [
@@ -40,30 +40,26 @@ function SectionCard({ icon: Icon, label, to, color, unread }) {
 }
 
 export default function Dashboard() {
-    const [counts, setCounts]       = useState({ contact: null, jobs: null, intern: null })
-    const [viewed, setViewed]       = useState({ contact: [], jobs: [], intern: [] })
+    const [unreadCounts, setUnreadCounts] = useState({ contact: 0, jobs: 0, intern: 0 })
     const [recentSubs, setRecentSubs] = useState([])
 
     useEffect(() => {
-        getViewedSubmissions().then(setViewed).catch(() => {})
+        getUnreadCounts().then(setUnreadCounts).catch(() => {})
 
         getContactSubmissions(1, 5)
             .then(d => {
-                setCounts(c => ({ ...c, contact: d.total ?? null }))
                 const items = (d.items ?? []).map(r => ({ name: r.name, type: 'Contact', date: r.submittedAt, to: '/submissions/contact' }))
                 setRecentSubs(prev => [...prev, ...items])
             }).catch(() => {})
 
         getJobSubmissions(1, 5)
             .then(d => {
-                setCounts(c => ({ ...c, jobs: d.total ?? null }))
                 const items = (d.items ?? []).map(r => ({ name: [r.firstName, r.lastName].filter(Boolean).join(' ') || r.email, type: 'Job', date: r.submittedAt, to: '/submissions/jobs' }))
                 setRecentSubs(prev => [...prev, ...items])
             }).catch(() => {})
 
         getInternshipSubmissions(1, 5)
             .then(d => {
-                setCounts(c => ({ ...c, intern: d.total ?? null }))
                 const items = (d.items ?? []).map(r => ({ name: r.fullName || r.email, type: 'Internship', date: r.submittedAt, to: '/submissions/internship' }))
                 setRecentSubs(prev => [...prev, ...items])
             }).catch(() => {})
@@ -87,9 +83,7 @@ export default function Dashboard() {
                 </h2>
                 <div className="dash-grid dash-grid--3">
                     {SUBMISSIONS.map(s => {
-                        const total = counts[s.countKey]
-                        const viewedIds = viewed[s.countKey] ?? []
-                        const n = total != null ? Math.max(0, total - viewedIds.length) : 0
+                        const n = unreadCounts[s.countKey] ?? 0
                         return (
                             <SectionCard
                                 key={s.to}

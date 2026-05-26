@@ -135,6 +135,17 @@ public class SubmissionsController(AppDbContext db, IWebHostEnvironment env) : C
 
     // ── Viewed tracking ───────────────────────────────────────────────────────
 
+    [HttpGet("unread-counts"), Authorize]
+    public IActionResult GetUnreadCounts()
+    {
+        var viewed = db.ViewedSubmissions.Find(1) ?? new ViewedSubmissionsRow();
+        return Ok(new {
+            contact = db.ContactEnquiries.Count(x => !viewed.Contact.Contains(x.Id)),
+            jobs    = db.JobApplications.Count(x => !viewed.Jobs.Contains(x.Id)),
+            intern  = db.InternshipApplications.Count(x => !viewed.Intern.Contains(x.Id)),
+        });
+    }
+
     [HttpGet("viewed"), Authorize]
     public IActionResult GetViewed()
         => Ok(db.ViewedSubmissions.Find(1) ?? new ViewedSubmissionsRow());
