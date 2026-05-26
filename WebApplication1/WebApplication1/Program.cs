@@ -76,8 +76,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseStaticFiles();
 app.UseCors("AdminFrontend");
+app.UseStaticFiles();
 app.UseAuthentication();
 app.UseAuthorization();
 
